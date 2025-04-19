@@ -12,7 +12,7 @@ cleanup() {
     trap '' INT TERM # prevent ctrl+c during cleanup
     
     echo -e "\nKilling remote port..."
-    ssh -i auth/id_rsa root@$VPS_IP "fuser -k 5555/tcp || true" >/dev/null 2>&1 
+    ssh -i auth/id_rsa root@$VPS_IP "fuser -k $REMOTE_TUNNEL_PORT/tcp || true" >/dev/null 2>&1 
     echo "Done."
 }
 
