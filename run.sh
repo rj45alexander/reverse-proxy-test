@@ -61,4 +61,4 @@ exec autossh -M 0 -N \
     -R localhost:2222:localhost:22 \
     root@$VPS_IP \
     >/dev/null 2>&1 &
-tail -F temp/socks.log
+tail -F logs/socks.log
