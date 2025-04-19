@@ -1,0 +1,12 @@
+config.env
+!config.env.example
+id_rsa
+*.log
+danted.conf
+
+
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+nohup.log
